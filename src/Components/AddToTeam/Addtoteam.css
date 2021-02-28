@@ -1,8 +1,6 @@
-/* .fixes{
-    position: fixed;
-    bottom: -4px;
-    right: 10px;
-} */
-.fixes h1{
-    
+.playerNamebox{
+    border: 1px solid rgb(138, 135, 135);
+    height: 25%;
+    border-radius: 5px;
+    text-align: left;
 }
