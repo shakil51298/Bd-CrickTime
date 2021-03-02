@@ -1,3 +1,5 @@
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Card.css'
 
@@ -13,7 +15,7 @@ const Card = (props) => {
     
     
 
-    const {first_name,last_name,Salery,Current_age,Batting_style,Boowling_style,gender,Country,image} = props.singlePlayerInfo
+    const {first_name,last_name,Salery,Current_age,Batting_style,Bowling_style,gender,Country,image} = props.singlePlayerInfo
     return (   
             <div className="col mb-3 ">
                 <div className="card card-s">
@@ -25,9 +27,11 @@ const Card = (props) => {
                         <p className="card-text">Current age: {Current_age}</p>
                         <p className="card-text">Gender: {gender}</p>
                         <p className="card-text">Salery: {Salery} tk</p>
-                        <p className="card-text text-danger">Batting_style</p>
-                        <p className="card-text text-danger">Boowling_style</p>
-                        <button className="btn-sm btn-primary" onClick={()=>BtnHxandler(info)}>Add To Team</button>
+                        <p className="card-text text-danger">Batting style: {Batting_style}</p>
+                        <p className="card-text text-danger">Bowling style: {Bowling_style}</p>
+                        <button className="btn-sm btn-primary" onClick={()=>BtnHxandler(info)}>Add To Team 
+                          <FontAwesomeIcon icon={faCartPlus}/>
+                        </button>
                     </div>
                 </div>
             </div>

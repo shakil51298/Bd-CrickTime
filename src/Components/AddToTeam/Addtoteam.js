@@ -1,5 +1,7 @@
 import React from 'react';
 import './Addtoteam.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
 
 const Addtoteam = (props) => {
     const info = props.infoSending;
@@ -10,25 +12,25 @@ const Addtoteam = (props) => {
         const singleInfo = info[i];
         totalCost = totalCost + singleInfo.Salery
     }
+     
 
     
     return (
         <div className="fixes">
-            <h4>Final Squade</h4>
+            <h4> <FontAwesomeIcon icon={faArrowAltCircleRight} /> Select For your Team</h4>
             <hr/>
-            <h4>total added: {info.length}</h4>
+            <p>Added: {info.length}</p>
             <hr/>
             <div className="playerNamebox">
                 {
-                    info.map(name => <span class="badge bg-danger text-light ml-2" >{name.last_name}</span>)
+                    info.map(name => <span class="badge bg-danger text-light ml-2" >{name.first_name + name.last_name}</span>)
                 }
             </div>
+                <br/>
+                <br/>
+            <p>Total Cost : {totalCost} tk</p>
             <hr/>
-            <h5>Total Cost : {totalCost} tk</h5>
-            <hr/>
-            <h4>shakil</h4>
-            <hr/>
-            <h4>shakil</h4>
+            <p>shakil</p>
             <hr/>
         </div>
     );

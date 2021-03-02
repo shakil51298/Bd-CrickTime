@@ -15,7 +15,6 @@ const Playerinfo = () => {
     const BtnHxandler = (playerinfo) => {
         const newInfo = [...info,playerinfo]
         setInfo(newInfo)
-        console.log(playerinfo);
     }
 
     return (
