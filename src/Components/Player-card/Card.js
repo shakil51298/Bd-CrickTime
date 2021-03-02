@@ -1,4 +1,4 @@
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCartPlus ,faFlag, faMale, faMoneyCheck} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Card.css'
@@ -22,15 +22,15 @@ const Card = (props) => {
                     <img src={image} className="card-img-top " alt=""/>
                     <div className="card-body">
                         <h5 className="card-title">{first_name + ' '+ last_name} 
-                             <span class="badge bg-danger text-light ml-2">{Country}</span>
+                             <span class="badge bg-danger text-light ml-2">{Country} <FontAwesomeIcon icon={faFlag}/></span>
                         </h5>
                         <p className="card-text">Current age: {Current_age}</p>
-                        <p className="card-text">Gender: {gender}</p>
-                        <p className="card-text">Salery: {Salery} tk</p>
-                        <p className="card-text text-danger">Batting style: {Batting_style}</p>
-                        <p className="card-text text-danger">Bowling style: {Bowling_style}</p>
+                        <p className="card-text"><span><FontAwesomeIcon icon={faMale}/></span> Gender: {gender}</p>
+                        <p className="card-text"><span><FontAwesomeIcon icon={faMoneyCheck}/></span> Salery: {Salery} tk</p>
+                        <p className="card-text ">Batting style: {Batting_style}</p>
+                        <p className="card-text ">Bowling style: {Bowling_style}</p>
                         <button className="btn-sm btn-primary" onClick={()=>BtnHxandler(info)}>Add To Team 
-                          <FontAwesomeIcon icon={faCartPlus}/>
+                         <FontAwesomeIcon icon={faCartPlus}/>
                         </button>
                     </div>
                 </div>

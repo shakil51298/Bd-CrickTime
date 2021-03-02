@@ -17,7 +17,7 @@ const Addtoteam = (props) => {
     
     return (
         <div className="fixes">
-            <h4> <FontAwesomeIcon icon={faArrowAltCircleRight} /> Select For your Team</h4>
+            <h4> <FontAwesomeIcon icon={faArrowAltCircleRight} /> Select player For your Team</h4>
             <hr/>
             <p>Added: {info.length}</p>
             <hr/>
@@ -29,8 +29,6 @@ const Addtoteam = (props) => {
                 <br/>
                 <br/>
             <p>Total Cost : {totalCost} tk</p>
-            <hr/>
-            <p>shakil</p>
             <hr/>
         </div>
     );
