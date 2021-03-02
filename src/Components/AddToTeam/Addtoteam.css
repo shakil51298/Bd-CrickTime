@@ -1,6 +1,14 @@
 .playerNamebox{
     border: 1px solid rgb(138, 135, 135);
-    height:40%;
+    height:100%;
+    
     border-radius: 5px;
     text-align: left;
+}
+.nameAndSalery {
+    margin-top:2.5px;
+}
+.nameAndSalery p{
+    margin-top: 2px;
+    line-height: 2px;
 }

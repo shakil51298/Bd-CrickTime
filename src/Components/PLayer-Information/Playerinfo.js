@@ -28,7 +28,10 @@ const Playerinfo = () => {
                             ></Card>)
                     }
                 </div>
-                <div className="card w-25 text-center ml-3 h-50 info">
+                <div className="afaterAddDetails">
+
+                </div>
+                <div className="card text-center ml-3 info">
                     <Addtoteam infoSending = {info}></Addtoteam>
                 </div>
             </div>

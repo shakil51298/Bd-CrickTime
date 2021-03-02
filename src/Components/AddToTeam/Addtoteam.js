@@ -17,17 +17,18 @@ const Addtoteam = (props) => {
     
     return (
         <div className="fixes">
-            <h4> <FontAwesomeIcon icon={faArrowAltCircleRight} /> Select player For your Team</h4>
+            <h4> <FontAwesomeIcon icon={faArrowAltCircleRight} /> Select For your Team</h4>
             <hr/>
             <p>Added: {info.length}</p>
             <hr/>
-            <div className="playerNamebox">
+            <div className="playerNamebox" >
                 {
-                    info.map(name => <span class="badge bg-danger text-light ml-2" >{name.first_name + name.last_name}</span>)
+                    info.map(name => <div class="badge bg-danger text-light ml-2 nameAndSalery" >
+                        <p>{name.first_name + ' ' + name.last_name}</p>
+                        <p>Salery: {name.Salery}</p>
+                    </div>)
                 }
             </div>
-                <br/>
-                <br/>
             <p>Total Cost : {totalCost} tk</p>
             <hr/>
         </div>
